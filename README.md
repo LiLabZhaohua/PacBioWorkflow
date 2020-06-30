@@ -84,3 +84,13 @@ $ PAS_Peaks="PAS_peaks.txt"
 #Run the pipeline:
 PacbioPASFiltering.sh InputParameters3.txt MouseCombined
 ```
+
+### Pipeline output files:
+
+1, *.Assembly.CAGECorrected.PASCorrected.Sorted.gpd
+
+This file contains final assembly in GenePred (gpd) file, supported by LRs, CAGE and PAS peaks or RefSeq ends.
+
+2, *.Assembly.CAGECorrected.PASCorrected.IntactReadsSubisoforms.txt
+
+This file contains mapping of intact LRs to assembly.
