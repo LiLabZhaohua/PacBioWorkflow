@@ -1,0 +1,8 @@
+#InputParameters2.txt
+#This file is part of the PacbioManualFilterByCAGE.sh pipeline, for parameter setting
+
+#For different pipelines, the requirement will be different:
+
+#For PacbioManualFilterByCAGE.sh
+genome="mm10"
+CAGE_Peaks="CAGE_peaks.txt"

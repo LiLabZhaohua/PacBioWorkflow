@@ -1,0 +1,7 @@
+#InputParameters3.txt
+
+#For different pipelines, the requirement will be different:
+
+#For PacbioPASFiltering.sh
+genome="mm10"
+PAS_Peaks="PAS_peaks.txt"
