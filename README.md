@@ -7,6 +7,12 @@ This workflow contains C++ codes and pipeline scripts, for mouse and human PacBi
 
 ## Before running the workflow
 
+1, Download codes
+
+```
+git clone https://github.com/LiLabZhaohua/PacBioWorkflow.git
+```
+
 1, Compile C++ codes
 
 The compilation of C++ codes requires g++ and [boost library](https://www.boost.org/).
