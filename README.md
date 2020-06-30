@@ -89,8 +89,8 @@ PacbioPASFiltering.sh InputParameters3.txt MouseCombined
 
 1, *.Assembly.CAGECorrected.PASCorrected.Sorted.gpd
 
-This file contains final assembly in GenePred (gpd) file, supported by LRs, CAGE and PAS peaks or RefSeq ends.
+This file contains final assembly in GenePred (gpd) format, supported by LRs, CAGE and PAS peaks or RefSeq ends.
 
 2, *.Assembly.CAGECorrected.PASCorrected.IntactReadsSubisoforms.txt
 
-This file contains mapping of intact LRs to assembly.
+This file contains the mapping of intact LRs to assembly.
