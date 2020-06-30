@@ -33,7 +33,11 @@ PacbioManualFilterByCAGE.sh
 PacbioPASFiltering.sh
 ```
 
-## Input files for the pipelines
+## Prepare input files and run the workflow
+
+All required files for mouse workflow can be found in ./PacBioData_Mouse, except the long reads (LRs) [bam file]()
+
+The follwoing three workflows need to be run in the same directory (input files should also be in the same directory).
 
 ### 1, PacbioGetAssembly.sh
 
@@ -51,6 +55,30 @@ cat InputParameters1.txt
 PacbioGetAssembly.sh InputParameters1.txt MouseCombined
 ```
 
+### 2, PacbioManualFilterByCAGE.sh
 
+This pipeline requires RefSeq annotation in refFlat format, CAGE peak data, and outputs from the previous pipeline.
 
+```
+#Write the input file names in InputParameters2.txt file
+cat InputParameters2.txt
+  genome="mm10"
+  CAGE_Peaks="CAGE_peaks.txt"
 
+#Run the pipeline:
+PacbioManualFilterByCAGE.sh InputParameters2.txt MouseCombined
+```
+
+### 3, PacbioPASFiltering.sh
+
+This pipeline requires RefSeq annotation in refFlat format, CAGE peak data, and outputs from the previous pipelines.
+
+```
+#Write the input file names in InputParameters3.txt file
+cat InputParameters3.txt
+  genome="mm10"
+  PAS_Peaks="PAS_peaks.txt"
+  
+#Run the pipeline:
+PacbioPASFiltering.sh InputParameters3.txt MouseCombined
+```
