@@ -34,3 +34,23 @@ PacbioPASFiltering.sh
 ```
 
 ## Input files for the pipelines
+
+### 1, PacbioGetAssembly.sh
+
+This pipeline requires RefSeq annotation in refFlat format, long reads (LRs) bam file (with bam index file), and short reads (SRs) assembly by StringTie.
+
+```
+#Write the input file names in InputParameters1.txt file
+cat InputParameters1.txt
+  #Required parameters for PacbioGetAssembly.sh
+  genome="mm10"                           #Files: ${genome}_refFlat.txt, if not, then ${genome}_refFlat_modified.gpd is also acceptable
+  LR_Bam="PacBioSpermTestisMerged_sgl.bam"
+  StringTie_Assembly="stringtie_merge.gpd"
+
+#Run the pipeline:
+PacbioGetAssembly.sh InputParameters1.txt MouseCombined
+```
+
+
+
+
