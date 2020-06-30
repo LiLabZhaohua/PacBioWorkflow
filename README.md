@@ -46,10 +46,10 @@ This pipeline requires RefSeq annotation in refFlat format, long reads (LRs) bam
 ```
 #Write the input file names in InputParameters1.txt file
 cat InputParameters1.txt
-  #Required parameters for PacbioGetAssembly.sh
-  genome="mm10"                           #Files: ${genome}_refFlat.txt, if not, then ${genome}_refFlat_modified.gpd is also acceptable
-  LR_Bam="PacBioSpermTestisMerged_sgl.bam"
-  StringTie_Assembly="stringtie_merge.gpd"
+$ #Required parameters for PacbioGetAssembly.sh
+$ genome="mm10"                           #Files: ${genome}_refFlat.txt, if not, then ${genome}_refFlat_modified.gpd is also acceptable
+$ LR_Bam="PacBioSpermTestisMerged_sgl.bam"
+$ StringTie_Assembly="stringtie_merge.gpd"
 
 #Run the pipeline:
 PacbioGetAssembly.sh InputParameters1.txt MouseCombined
@@ -62,8 +62,9 @@ This pipeline requires RefSeq annotation in refFlat format, CAGE peak data, and 
 ```
 #Write the input file names in InputParameters2.txt file
 cat InputParameters2.txt
-  genome="mm10"
-  CAGE_Peaks="CAGE_peaks.txt"
+$ #Required parameters for PacbioManualFilterByCAGE.sh
+$ genome="mm10"
+$ CAGE_Peaks="CAGE_peaks.txt"
 
 #Run the pipeline:
 PacbioManualFilterByCAGE.sh InputParameters2.txt MouseCombined
@@ -76,8 +77,9 @@ This pipeline requires RefSeq annotation in refFlat format, CAGE peak data, and 
 ```
 #Write the input file names in InputParameters3.txt file
 cat InputParameters3.txt
-  genome="mm10"
-  PAS_Peaks="PAS_peaks.txt"
+$ #Required parameters for PacbioPASFiltering.sh
+$ genome="mm10"
+$ PAS_Peaks="PAS_peaks.txt"
   
 #Run the pipeline:
 PacbioPASFiltering.sh InputParameters3.txt MouseCombined
