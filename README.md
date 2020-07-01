@@ -106,11 +106,11 @@ If no CAGE and PAS data provided, only need to run the first workflow: PacbioGet
 
 1, *.IntactIsoform_sorted.gpd
 
-This is the final assembly at exon usage level in GenePred (gpd) format.
+This is the final assembly of exon usage level isoforms in GenePred (gpd) format.
 
 2, *.IntactIsoform_sorted.ReadsMapped.txt
 
-This file contains the mapping of intact+decay reads to intact assembly (*.IntactIsoform_sorted.gpd)
+This file contains the mapping of LRs (intact + decay + unmapped) to intact assembly (*.IntactIsoform_sorted.gpd)
 
 ### Intact isoform identification with CAGE and PAS data
 
