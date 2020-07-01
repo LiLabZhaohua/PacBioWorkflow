@@ -5,6 +5,8 @@ Sun, Y.H., Wang, A., Song, C., Srivastava, R.K., Au, K.F., Li, X.Z. (2020) Singl
 
 This workflow contains C++ codes and pipeline scripts, for mouse and human PacBio assembly.
 
+If CAGE and PAS data supported, run all the three workflows for intact isoform assembly with ends correction. If not, only need to run the first workflow to define intact isoforms at exon-usage level.
+
 ## Before running the workflow
 
 1, Download codes
@@ -22,7 +24,7 @@ Add compiled file directory to $PATH
 2, Test the pipelines
 
 ```
-chmod +x PacBioWorkflow_Mouse/*sh
+chmod +x PacBioWorkflow/*sh
 ```
 
 Then type pipeline names to get manual page (these three files need to be run in the following order):
@@ -37,7 +39,11 @@ PacbioPASFiltering.sh
 
 All required files for mouse workflow can be found in ./PacBioData_Mouse, except the long reads (LRs) [bam file]()
 
+All required files for mouse workflow can be found in ./PacBioData_Human, except the long reads (LRs) [bam file]()
+
 The follwoing three workflows need to be run in the same directory (input files should also be in the same directory).
+
+Here, we use mouse mm10 as an example. For human, change the InputParameter files accordingly.
 
 ### 1, PacbioGetAssembly.sh
 
@@ -85,7 +91,21 @@ $ PAS_Peaks="PAS_peaks.txt"
 PacbioPASFiltering.sh InputParameters3.txt MouseCombined
 ```
 
-### Pipeline output files:
+## Pipeline output files:
+
+### Exon usage level intact isoform identification
+
+If no CAGE and PAS data provided, only need to run the first workflow: PacbioGetAssembly.sh
+
+1, *.IntactIsoform_sorted.gpd
+
+This is the final assembly at exon usage level in GenePred (gpd) format.
+
+2, *.IntactIsoform_sorted.ReadsMapped.txt
+
+This file contains the mapping of intact+decay reads to intact assembly (*.IntactIsoform_sorted.gpd)
+
+### Intact isoform identification with CAGE and PAS data
 
 1, *.Assembly.CAGECorrected.PASCorrected.Sorted.gpd
 
