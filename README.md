@@ -15,9 +15,14 @@ If CAGE and PAS data supported, run all the three workflows for intact isoform a
 git clone https://github.com/LiLabZhaohua/PacBioWorkflow.git
 ```
 
-1, Compile C++ codes
+1, Compile C++ scripts
 
 The compilation of C++ codes requires g++ and [boost library](https://www.boost.org/).
+
+```
+chmod +x Makefile.sh
+Makefile.sh
+```
 
 Add compiled file directory to $PATH
 
@@ -26,6 +31,8 @@ Add compiled file directory to $PATH
 ```
 chmod +x PacBioWorkflow/*sh
 ```
+
+Add PacBioWorkflow directory to $PATH
 
 Then type pipeline names to get manual page (these three files need to be run in the following order):
 
