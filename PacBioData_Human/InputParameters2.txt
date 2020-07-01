@@ -1,0 +1,6 @@
+#InputParameters2.txt
+#This file is part of the PacbioManualFilterByCAGE.sh pipeline, for parameter setting
+
+#Step 2, PacbioManualFilterByCAGE.sh
+genome="hg38"
+CAGE_Peaks="merged.CAGE.sorted.bed6.5end.sorted.peaks"

@@ -1,0 +1,15 @@
+#InputParameters1.txt
+#This file is part of the PacbioGetAssembly.sh pipeline, for parameter setting
+
+#A list of all possible files
+#Refseq annotation:
+#   ${genome}_refFlat.txt             e.g. mm10_refFlat.txt
+#CAGE peaks:
+#   ${CAGE_Peaks}                     e.g. cage_peak_list_sy.txt
+
+For different pipelines, the requirement will be different:
+
+#Required parameters for PacbioGetAssembly.sh
+genome="hg38"                         #Files: ${genome}_refFlat.txt, if not, then ${genome}_refFlat_modified.gpd is also acceptable
+LR_Bam="sort_flnc_ccs.bam"
+StringTie_Assembly="stringtie_hm.gpd"
