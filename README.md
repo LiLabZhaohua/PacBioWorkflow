@@ -107,7 +107,7 @@ This file contains the mapping of intact+decay reads to intact assembly (*.Intac
 
 ### Intact isoform identification with CAGE and PAS data
 
-1, *.Assembly.CAGECorrected.PASCorrected.Sorted.gpd
+1, *.Assembly.CAGECorrected.PASCorrected.Final.Sorted.gpd
 
 This file contains final assembly in GenePred (gpd) format, supported by LRs, CAGE and PAS peaks or RefSeq ends.
 
