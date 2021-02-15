@@ -46,7 +46,7 @@ PacbioPASFiltering.sh
 
 ## Prepare input files and run the workflow
 
-All required files for mouse workflow can be found in ./PacBioData_Mouse, except the long reads (LRs) [bam file]()
+All required files for mouse workflow can be found in ./PacBioData_Mouse, except the long reads (LRs) [bam file](https://github.com/LiLabZhaohua/PacBioWorkflow/releases/download/v1.0/PacBioSpermTestisMerged_sgl.bam)
 
 All required files for mouse workflow can be found in ./PacBioData_Human, except the long reads (LRs) [bam file]()
 
