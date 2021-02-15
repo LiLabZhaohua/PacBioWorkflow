@@ -7,7 +7,7 @@ This workflow contains C++ codes and pipeline scripts, for mouse and human PacBi
 
 If CAGE and PAS data supported, run all the three workflows for intact isoform assembly with ends correction. If not, only need to run the first workflow to define intact isoforms at exon-usage level.
 
-![](/images/Workflow2.png)
+![](/images/Workflow.png)
 
 ## Before running the workflow
 
