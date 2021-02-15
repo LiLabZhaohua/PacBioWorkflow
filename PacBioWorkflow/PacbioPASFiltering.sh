@@ -60,7 +60,7 @@ else
   echo "  PAS_Peaks found"
 fi
 
-echo "Step 02, Create a combination of PAC_Peaks and RefSeq 3ends"
+echo "Step 02, Create a combination of PAS_Peaks and RefSeq 3ends"
 Annotated3PrimeEnd ${genome}_refFlat_modified.gpd | sort -u > ${OutputPrefix}.PAS.annotated_3end.txt
 cat ${PAS_Peaks} ${OutputPrefix}.PAS.annotated_3end.txt | sort -u > ${OutputPrefix}.PAS.RefSeq.3end.txt
 
