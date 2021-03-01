@@ -1,7 +1,7 @@
 # PacBioWorkflow
 A collection of scripts for our PacBio paper:
 
-Sun, Y.H., Wang, A., Song, C., Srivastava, R.K., Au, K.F., Li, X.Z. (2020) Single-molecule long-read sequencing reveals a conserved selection mechanism retaining intact long RNAs and miRNAs in sperm. bioRxiv, [doi:10.1101/2020.05.28.122382](https://www.biorxiv.org/content/10.1101/2020.05.28.122382v1)
+Sun, Y.H., Wang, A., Song, C. et al. Single-molecule long-read sequencing reveals a conserved intact long RNA profile in sperm. *Nature Communications* 12, 1361 (2021)., [https://doi.org/10.1038/s41467-021-21524-6](https://www.nature.com/articles/s41467-021-21524-6)
 
 This workflow contains C++ codes and pipeline scripts, for mouse and human PacBio assembly.
 
