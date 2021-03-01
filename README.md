@@ -1,11 +1,11 @@
 # PacBioWorkflow
 A collection of scripts for our PacBio paper:
 
-Sun, Y.H., Wang, A., Song, C. et al. Single-molecule long-read sequencing reveals a conserved intact long RNA profile in sperm. *Nature Communications* 12, 1361 (2021)., [https://doi.org/10.1038/s41467-021-21524-6](https://www.nature.com/articles/s41467-021-21524-6)
+Sun, Y.H., Wang, A., Song, C., Shankar, G., Srivastava, R.K., Au, K.F. and Li, X.Z. Single-molecule long-read sequencing reveals a conserved intact long RNA profile in sperm. *Nature Communications* 12, 1361 (2021)., [https://doi.org/10.1038/s41467-021-21524-6](https://www.nature.com/articles/s41467-021-21524-6)
 
 This workflow contains C++ codes and pipeline scripts, for mouse and human PacBio assembly.
 
-If CAGE and PAS data supported, run all the three workflows for intact isoform assembly with ends correction. If not, only need to run the first workflow to define intact isoforms at exon-usage level.
+If CAGE and PAS data supported, run all the three workflows for intact isoform assembly with end correction. If not, only need to run the first workflow to define intact isoforms at exon-usage level.
 
 ![](/images/Workflow.png)
 
