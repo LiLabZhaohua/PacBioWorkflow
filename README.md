@@ -30,7 +30,7 @@ Add compiled file directory to $PATH
 
 If you are using Linux system, all compiled binary files are now in the release, and you can download them here:
 
-https://github.com/LiLabZhaohua/PacBioWorkflow/archive/refs/tags/v1.0.0.tar.gz
+https://github.com/LiLabZhaohua/PacBioWorkflow/releases/download/v1.0.0/Linux_binary.tar.gz
 
 2, Test the pipelines
 
